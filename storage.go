@@ -50,13 +50,9 @@ func (fs *arStorage) SetMeta(fd storage.FileDesc) error {
 	return errReadOnly
 }
 
-func (fs *arStorage) GetMeta() (rtf storage.FileDesc, rterr error) {
+func (fs *arStorage) GetMeta() (storage.FileDesc, error) {
 	fs.mu.Lock()
 	defer fs.mu.Unlock()
-
-	defer func() {
-		fmt.Printf("rtf %s %+v\n", rtf.Type, rterr)
-	}()
 
 	hdrs, err := fs.ar.List()
 	if err != nil {
