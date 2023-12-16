@@ -6,7 +6,7 @@ go 1.21
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
-	github.com/emptyhua/saar v0.0.0-20231215061224-30de88758fb6 // indirect
+	github.com/emptyhua/saar v0.1.0-beta // indirect
 	github.com/golang/snappy v0.0.0-20180518054509-2e65f85255db // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/stretchr/testify v1.8.4 // indirect
